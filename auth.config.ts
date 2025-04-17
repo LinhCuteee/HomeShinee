@@ -5,6 +5,10 @@ import { getUserByEmail } from "./app/lib/data";
 import bcrypt from "bcryptjs"
 import Credentials from "next-auth/providers/credentials"
 
+export const config = {
+  runtime: 'nodejs',
+}
+
 export default {
   providers: [
     Google({
